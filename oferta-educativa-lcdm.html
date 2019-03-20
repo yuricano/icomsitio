@@ -1,0 +1,553 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>iCom - Instituto Ejecutivo en Comunicación Especializada</title>
+	<link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+	<link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="css/app.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyubM8tzLFuDWCHO3MIAZ-N_6UNtXMWRg"></script>
+	<script type="text/javascript">
+		// When the window has finished loading create our google map below
+		google.maps.event.addDomListener(window, 'load', init);
+
+		function init() {
+			// Basic options for a simple Google Map
+			// For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+			var mapOptions = {
+				// How zoomed in you want the map to start at (always required)
+				zoom: 17,
+
+				// The latitude and longitude to center the map (always required)
+				center: new google.maps.LatLng(25.6634281, -100.1995923), // iCom
+
+				// How you would like to style the map. 
+				// This is where you would paste any style found on Snazzy Maps.
+				styles: [{
+					"featureType": "administrative",
+					"elementType": "labels.text.fill",
+					"stylers": [{
+						"color": "#444444"
+					}]
+				}, {
+					"featureType": "landscape",
+					"elementType": "all",
+					"stylers": [{
+						"color": "#f2f2f2"
+					}]
+				}, {
+					"featureType": "poi",
+					"elementType": "all",
+					"stylers": [{
+						"visibility": "off"
+					}]
+				}, {
+					"featureType": "road",
+					"elementType": "all",
+					"stylers": [{
+						"saturation": -100
+					}, {
+						"lightness": 45
+					}]
+				}, {
+					"featureType": "road.highway",
+					"elementType": "all",
+					"stylers": [{
+						"visibility": "simplified"
+					}]
+				}, {
+					"featureType": "road.highway",
+					"elementType": "geometry",
+					"stylers": [{
+						"visibility": "on"
+					}]
+				}, {
+					"featureType": "road.highway",
+					"elementType": "geometry.fill",
+					"stylers": [{
+						"visibility": "on"
+					}, {
+						"color": "#a69aba"
+					}]
+				}, {
+					"featureType": "road.highway",
+					"elementType": "geometry.stroke",
+					"stylers": [{
+						"visibility": "on"
+					}]
+				}, {
+					"featureType": "road.arterial",
+					"elementType": "geometry.fill",
+					"stylers": [{
+						"visibility": "on"
+					}, {
+						"color": "#d4d1d5"
+					}]
+				}, {
+					"featureType": "road.arterial",
+					"elementType": "labels.icon",
+					"stylers": [{
+						"visibility": "off"
+					}]
+				}, {
+					"featureType": "transit",
+					"elementType": "all",
+					"stylers": [{
+						"visibility": "off"
+					}]
+				}, {
+					"featureType": "water",
+					"elementType": "all",
+					"stylers": [{
+						"color": "#d4cae3"
+					}, {
+						"visibility": "on"
+					}]
+				}]
+			};
+
+			// Get the HTML DOM element that will contain your map 
+			// We are using a div with id="map" seen below in the <body>
+			var mapElement = document.getElementById('map');
+
+			// Create the Google Map using our element and options defined above
+			var map = new google.maps.Map(mapElement, mapOptions);
+
+			// Let's also add a marker while we're at it
+			var marker = new google.maps.Marker({
+				position: new google.maps.LatLng(25.6634281, -100.1995923),
+				map: map,
+				title: 'iCom'
+			});
+		}
+	</script>
+
+	<link rel="stylesheet" href="css/textos.css">
+	<link rel="stylesheet" href="css/redes.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<script src="js/wow.min.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+		new WOW().init();
+	</script>
+</head>
+
+<body>
+	<div class="top-bar hide-for-small-only">
+		<div class="top-bar-left">
+			<ul class="menu">
+				<li class=""><a href="index.html"><img src="img/logo-sin.png" alt="iCom" height="50" /></a></li>
+			</ul>
+		</div>
+		<div class="top-bar-right">
+			<div class="menu" style="padding-top: 30px">
+				<ul class="dropdown menu" data-dropdown-menu>
+					<li style="color: #602F7E;"><a href="index.html">Inicio</a></li>
+					<li style="color: #602F7E;">
+							<a href="quienes-somos.html#somos">Quienes Somos</a>
+							<ul class="menu vertical">
+								<li style="color: #602F7E;">
+										<a href="quienes-somos.html#somos">iCom</a></li>
+								<li style="color: #602F7E;">
+									<a href="quienes-somos.html#historia">Historia</a></li>
+								<li style="color: #602F7E;">
+									<a href="quienes-somos.html#mision">Misión</a></li>
+								<li style="color: #602F7E;">
+									<a href="quienes-somos.html#mision">Visión</a></li>
+							</ul>
+						</li>
+	
+						<li style="color: #602F7E;">
+							<a href="oferta-educativa.html">Oferta Educativa</a>
+							<ul class="menu vertical">
+									<li style="color: #602F7E;" id="line1">
+											<a href="oferta-educativa.html">
+												<span>Oferta Educativa</span>
+												</span>
+											</a></li>
+							<li style="color: #602F7E;" id="line1">
+								<a href="oferta-educativa-lcdm.html">
+									<span id="a">LCMD</span>
+									<span id="b">LICENCIATURA EN COMUNICACIÓN Y MEDIOS DIGITALES
+									</span>
+								</a></li>
+							<li style="color: #602F7E;" id="line2">
+								<a href="oferta-educativa-lme.html">
+									<span id="c">LME</span>
+									<span id="d">LICENCIATURA EN MERCADOTECNIA ESTRATÉGICA
+									</span>
+								</a></li>
+							<li style="color: #602F7E;" id="line3">
+								<a href="oferta-educativa-mcmd.html">
+									<span id="e">MCMD</span>
+									<span id="f">MAESTRÍA EN COMUNICACIÓN Y MERCADOTECNIA DEPORTIVA
+									</span>
+								</a></li>
+						</ul>
+					</li>
+					<li style="color: #602F7E;"><a href="admision.html">Admisión</a></li>
+					<li style="color: #602F7E;"><a href="contacto.html">Contacto</a></li>
+					<li style="color: #602F7E;"><a href="#">Plataforma</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="title-bar show-for-small-only hide-for-large hide-for-medium" data-responsive-toggle="example-animated-menu"
+	 data-hide-for="medium">
+		<button class="menu-icon" type="button" data-toggle></button>
+		<div class="title-bar-title">Menú</div>
+	</div>
+
+	<div class="top-bar show-for-small-only hide-for-large hide-for-medium" id="example-animated-menu" data-animate="hinge-in-from-top spin-out">
+		<div class="top-bar-left">
+			<ul class="dropdown menu" data-dropdown-menu>
+				<li class="menu-text"><a href="index.html"><img src="img/logo-sin.png" alt="iCom" height="50" /></a></li>
+				<ul>
+					<li class="menu-text"><a href="index.html">Inicio</a></li>
+					<li class="menu-text"><a href="quienes-somos.html">Quienes Somos</a></li>
+					<li class="menu-text"><a href="oferta-educativa.html">Oferta Educativa</a></li>
+					<li class="menu-text"><a href="admision.html">Admisión</a></li>
+					<li class="menu-text"><a href="contacto.html">Contacto</a></li>
+					<li class="menu-text"><a href="#">Plataforma</a></li>
+				</ul>
+			</ul>
+		</div>
+	</div>
+
+	<div class="grid-container fluid">
+
+		<div class="grid-x grid-padding-x">
+
+			<div class="fondo-morado">
+				<div class="grid-container full">
+					<div class="grid-x grid-padding-x">
+						<div class="large-12 medium-12 cell">
+							<div class="fondo-morado">
+							</div>
+							-
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="large-12 medium-12 cell">
+				<img src="img/oferta-lcmd.png" alt="Quienes Somos" />
+			</div>
+
+			<div class="fondo-oscuro">
+				<div class="grid-container full">
+					<div class="grid-x grid-padding-x">
+						<div class="large-12 medium-12 cell">
+							<div class="fondo-morado">
+									<div class="texto-blanco center padding20">
+											<h3 style="text-transform: none !important;  
+														display:inline !important;">
+												iCom </h3>
+												<h3 style="display:inline !important;">
+											| Instituto Ejecutivo en Comunicación Especializada</h3>
+									</div>		
+							</div>
+						</div>
+						<div class="large-8 large-offset-2 medium-8 cell">
+							<h3 class="texto-blanco center">LICENCIATURA EN COMUNICACIÓN Y MEDIOS DIGITALES</h3>
+
+							<p class="texto-blanco center">La Licenciatura está diseñada para formar estrategas en comunicación digital;
+								vinculando lo teórico con lo práctico, nuestros alumnos serán capaces de desarrollar habilidades creativas y
+								tecnológicas, de análisis y manejo de información, las cuales les permitirán enfrentar los retos de
+								comunicación en el constante cambio de nuestra sociedad y el uso correcto y efectivo de medios de comunicación
+								tradicionales e innovadores en el área de la comunicación digital.
+							</p>
+						</div>
+					</div>
+
+					<div class="center padding20 ">
+						<h3>
+							<div class="large-12 cell clearfix">
+								<a href="#info" class="button right">PEDIR INFORMES</a>
+							</div>
+						</h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="fondo-oscuro padding">
+				<div class="grid-container">
+
+					<div class="grid-x grid-padding-x">
+
+						<div class="large-8 medium-6 cell">
+							<div class="callout" style="height: 200px">
+								<h5 class="texto-morado">Competencias a desarrollar</h5>
+								<ul>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Dominio de herramientas tecnológicas</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Creatividad, innovación y crítica</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Manejo de medios digitales</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Diseño y desarrollo de producciones
+											interactivas y multimedia</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="large-4 medium-4 cell">
+							<div class="callout secondary" style="height: 200px">
+								<h5>Duración: <span style="font-weight: 700">9 Tetramestres</span></h5>
+								<h5>Modalidad: <span style="font-weight: 700">Virtual</span></h5>
+								<h5>Inicio: <span style="font-weight: 700">SEPTIEMBRE 2019</span></h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="fondo-blanco padding">
+				<div class="grid-container">
+					<div class="grid-x grid-padding-x">
+
+						<div class="large-12 cell">
+							<h4 class="texto-morado">Plan de Estudios</h4>
+						</div>
+
+						<div class="large-4 medium-4 cell wow animated bounceInRight slower">
+							<div class="callout large" style="height: 320px; border: 1px solid #602F7E;">
+								<h5 style="color: #602F7E;">Primero</h5>
+								<ul>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Teoría de la comunicación</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Psicología</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Contexto virtual de la comunicación</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Marco legal de la comunicación</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Introducción a los medios</span></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="large-4 medium-4 cell wow animated bounceInRight slower">
+							<div class="callout large" style="height: 320px; border: 1px solid #602F7E;">
+								<h5 style="color: #602F7E;">Segundo</h5>
+								<ul>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Medios masivos</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Literatura y comunicación</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Sociología de la comunicacion</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Comunicación de masas</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Redacción</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Comunicación e innovación</span></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="large-4 medium-4 cell wow animated bounceInRight slower">
+							<div class="callout large" style="height: 320px; border: 1px solid #602F7E;">
+								<h5 style="color: #602F7E;">Tercero</h5>
+								<ul>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Redacción especializada</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Creatividad</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Recursos digitales de la comunicación</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Técnicas de negociación</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Semiótica</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Comunicación social</span></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="large-4 medium-4 cell wow animated bounceInRight slower">
+							<div class="callout large" style="height: 320px; border: 1px solid #602F7E;">
+								<h5 style="color: #602F7E;">Cuarto</h5>
+								<ul>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Guionismo multimedia</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Semiótica de la imagen</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Investigación de la comunicación</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Diseño digital</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Administración y desarrollo de
+											microempresas</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Comunicación audiovisual</span></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="large-4 medium-4 cell wow animated bounceInRight slower">
+							<div class="callout large" style="height: 320px; border: 1px solid #602F7E;">
+								<h5 style="color: #602F7E;">Quinto</h5>
+								<ul>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Publicidad</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Mercadotecnia</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Producción fotográfica</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Producción televisiva I</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Producción radiofónica I</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Opinión pública</span></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="large-4 medium-4 cell wow animated bounceInRight slower">
+							<div class="callout large" style="height: 320px; border: 1px solid #602F7E;">
+								<h5 style="color: #602F7E;">Sexto</h5>
+								<ul>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Producción televisiva II</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Producción radiofónica II</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Comunicación organizacional</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Introducción al periodismo</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Redes sociales</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Relaciones públicas</span></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="large-4 medium-4 cell wow animated bounceInRight slower">
+							<div class="callout large" style="height: 320px; border: 1px solid #602F7E;">
+								<h5 style="color: #602F7E;">Séptimo</h5>
+								<ul>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Técnicas periodísticas</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Marketing digital</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Apreciación cinematográfico</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Ética</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Seminario de comunicación I</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Planeación estratégica</span></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="large-4 medium-4 cell wow animated bounceInRight slower">
+							<div class="callout large" style="height: 320px; border: 1px solid #602F7E;">
+								<h5 style="color: #602F7E;">Octavo</h5>
+								<ul>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Periodismo digital</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Elementos del cine</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Seminario de comunicación II</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Derechos de autor</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Comercio electrónico</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Optativa I</span></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="large-4 medium-4 cell wow animated bounceInRight slower">
+							<div class="callout large" style="height: 320px; border: 1px solid #602F7E;">
+								<h5 style="color: #602F7E;">Noveno</h5>
+								<ul>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Psicología y desarrollo profesional</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Seminario de comunicación III</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Servicios de comunicación digital</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Diseño editorial</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Optativa II</span></li>
+									<li style="color: #602F7E;"><span style="color:#333333 !important;">Desarrollo de proyectos integrales</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="fondo-blanco padding">
+				<div class="grid-container">
+					<div class="grid-x grid-margin-x">
+						<div class="large-12 medium-12 cell">
+							<div class="grid-x grid-padding-x">
+								<div class="large-6 columns">
+									<h5 class="texto-morado">Perfil del Egresado</h5>
+									<p align="justify"> 
+										Un Licenciado en Comunicación y Medios digitales podrá desempeñarse profesionalmente como creador de
+										contenidos para medios de comunicación, community manager, publicidad, fotografía, periodismo, productor y
+										estratega de medios digitales, relaciones públicas, identidad e imagen y comunicación social.</p>
+								</div>
+								<div class="large-4 large-offset-2 columns">
+									<h5 class="texto-morado">¿Dónde puedes trabajar?</h5>
+									<ul>
+										<li style="color: #602F7E;"><span style="color:#333333 !important;">Agencia de comunicación, publicidad o
+												mercadotecnia</span></li>
+										<li style="color: #602F7E;"><span style="color:#333333 !important;">Empresas públicas o privadas</span></li>
+										<li style="color: #602F7E;"><span style="color:#333333 !important;">Instituciones educativas</span></li>
+										<li style="color: #602F7E;"><span style="color:#333333 !important;">Empresas especializadas en medios de
+												comunicación</span></li>
+										<li style="color: #602F7E;"><span style="color:#333333 !important;">Industrias radiofónicas, televisivas o
+												cinematográficas</span></li>
+										<li style="color: #602F7E;"><span style="color:#333333 !important;">Medios de Comunicación</span></li>
+										<li style="color: #602F7E;"><span style="color:#333333 !important;">Consultorías de imagen</span></li>
+										<li style="color: #602F7E;"><span style="color:#333333 !important;">Empresa propia</span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="info" class="fondo-morado padding">
+				<div class="grid-container">
+					<div class="grid-x">
+						<div class="large-12 medium-12 cell">
+							<div class="grid-x grid-padding-x">
+								<div class="large-5 columns">
+									<img src="img/huella-blanca.png" alt="Quienes Somos" />
+									<br><br>
+									<h3 class="texto-blanco">Deja huella en tu vida.</h3><br>
+									<h5 class="texto-blanco">Contáctanos al (81) 83 61 20 84 o por redes</h5>
+									<div>
+
+										<span class="redessociales">
+
+											<a href="#" class="social-icon-button facebook"><i class="fa fa-facebook" aria-hidden="true"></i><span></span>
+											</a>
+
+											<a href="#" class="social-icon-button instagram"><i class="fa fa-instagram" aria-hidden="true"></i><span></span></a>
+
+											<a href="#" class="social-icon-button twitter"><i class="fa fa-twitter" aria-hidden="true"></i><span></span></a>
+
+											<a href="#" class="social-icon-button youtube"><i class="fa fa-youtube" aria-hidden="true"></i><span></span></a>
+
+										</span>
+									</div>
+								</div>
+								<div class="large-5 large-offset-2 columns">
+									<form>
+										<div class="grid-x grid-padding-x">
+											<div class="large-12 cell">
+												<label class="texto-blanco">Nombre</label>
+												<input type="text" placeholder="" />
+											</div>
+											<div class="large-12 cell">
+												<label class="texto-blanco">Apellido</label>
+												<input type="text" placeholder="" />
+											</div>
+											<div class="large-12 cell">
+												<label class="texto-blanco">Correo electrónico</label>
+												<input type="text" placeholder="" />
+											</div>
+											<div class="large-12 cell">
+												<label class="texto-blanco">Teléfono de contacto</label>
+												<input type="text" placeholder="" />
+											</div>
+											<div class="large-12 cell">
+												<label class="texto-blanco">Mensaje</label>
+												<textarea placeholder=""></textarea>
+											</div>
+											<div class="large-12 cell clearfix">
+												<a href="solicitud-en-linea.html" class="button right">ENVIAR FORMULARIO</a>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/vendor/jquery.js"></script>
+	<script src="js/vendor/what-input.js"></script>
+	<script src="js/vendor/foundation.js"></script>
+	<script src="js/app.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+	<script>
+		$(document).foundation();
+	</script>
+
+</body>
+
+</html>
