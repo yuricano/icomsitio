@@ -1,0 +1,11 @@
+C:\Desarrollo\af1\AF1_BusinessLogic\obj\Debug\AF1_BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Desarrollo\af1\AF1_BusinessLogic\bin\Debug\AF1_BusinessLogic.dll
+C:\Desarrollo\af1\AF1_BusinessLogic\bin\Debug\AF1_BusinessLogic.pdb
+C:\Desarrollo\af1\AF1_BusinessLogic\bin\Debug\AF1_BusinessData.dll
+C:\Desarrollo\af1\AF1_BusinessLogic\bin\Debug\AF1_BusinessEntity.dll
+C:\Desarrollo\af1\AF1_BusinessLogic\bin\Debug\AF1_BusinessData.pdb
+C:\Desarrollo\af1\AF1_BusinessLogic\bin\Debug\AF1_BusinessEntity.pdb
+C:\Desarrollo\af1\AF1_BusinessLogic\obj\Debug\AF1_BusinessLogic.csprojAssemblyReference.cache
+C:\Desarrollo\af1\AF1_BusinessLogic\obj\Debug\AF1_BusinessLogic.csproj.CopyComplete
+C:\Desarrollo\af1\AF1_BusinessLogic\obj\Debug\AF1_BusinessLogic.dll
+C:\Desarrollo\af1\AF1_BusinessLogic\obj\Debug\AF1_BusinessLogic.pdb

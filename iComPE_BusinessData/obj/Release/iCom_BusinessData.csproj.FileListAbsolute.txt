@@ -1,0 +1,9 @@
+C:\Desarrollo\iCOM\icomsitio\iComPE_BusinessData\bin\Release\iCom_BusinessData.dll
+C:\Desarrollo\iCOM\icomsitio\iComPE_BusinessData\bin\Release\iCom_BusinessData.pdb
+C:\Desarrollo\iCOM\icomsitio\iComPE_BusinessData\bin\Release\iCom_BusinessEntity.dll
+C:\Desarrollo\iCOM\icomsitio\iComPE_BusinessData\bin\Release\iCom_BusinessEntity.pdb
+C:\Desarrollo\iCOM\icomsitio\iComPE_BusinessData\obj\Release\iCom_BusinessData.csprojAssemblyReference.cache
+C:\Desarrollo\iCOM\icomsitio\iComPE_BusinessData\obj\Release\iCom_BusinessData.csproj.CoreCompileInputs.cache
+C:\Desarrollo\iCOM\icomsitio\iComPE_BusinessData\obj\Release\iCom_BusinessData.csproj.CopyComplete
+C:\Desarrollo\iCOM\icomsitio\iComPE_BusinessData\obj\Release\iCom_BusinessData.dll
+C:\Desarrollo\iCOM\icomsitio\iComPE_BusinessData\obj\Release\iCom_BusinessData.pdb
