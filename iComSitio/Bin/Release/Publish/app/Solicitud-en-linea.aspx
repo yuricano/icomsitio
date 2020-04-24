@@ -1,4 +1,4 @@
-﻿<%@ page title="" language="C#" masterpagefile="~/Sitio.master" autoeventwireup="true" inherits="_Solicitud, App_Web_enwucc3z" %>
+﻿<%@ page title="" language="C#" masterpagefile="~/Sitio.master" autoeventwireup="true" inherits="_Solicitud, App_Web_5mxjdure" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
 
@@ -98,8 +98,8 @@
                                         <div class="large-8 medium-8 cell">
                                             <label>
                                                 CURP / ID Nacionalidad
-                                            <asp:TextBox runat="server" ID="txtCURP"
-                                                pattern="([A-Z]{4}([0-9]{2})(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])[HM](AS|BC|BS|CC|CL|CM|CS|CH|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE)[A-Z]{3}[0-9A-Z]\d)">
+                                            <asp:TextBox runat="server" ID="txtCURP">
+                                                  
                                             </asp:TextBox>
                                             </label>
                                         </div>

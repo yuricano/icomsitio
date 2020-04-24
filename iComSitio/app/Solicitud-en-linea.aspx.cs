@@ -172,7 +172,7 @@ public partial class _Solicitud : System.Web.UI.Page
             oBEDG.fechanacimiento = fecha;
             
             //oBEDG.fechanacimiento = DateTime.Parse("01-01-2019");
-            ResgitraLog(oBEDG.fechanacimiento.ToString());
+            //ResgitraLog(oBEDG.fechanacimiento.ToString());
 
             oBEDG.nacionalidad = txtNacionalidad.Text;
             oBEDG.telefono = txtTelContacto.Text;
@@ -223,10 +223,11 @@ public partial class _Solicitud : System.Web.UI.Page
                 "Saludos!\n" +
                 "usuario: " + oBE.usuario + "\n" + "contraseña: " + oBE.contrasena;
 
-            enviarMail(sBody);
+            enviarMail(sBody, oBEDG.email);
 
             ResgitraLog("LISTO! Tu proceso de inscripción se ha iniciado exitosamente. <br> " +
-                "Recibirás un correo electrónico con los pasos a seguir para completar tu matrícula.");
+                "Recibirás un correo electrónico con los pasos a seguir para completar tu matrícula. <br>" +
+                "En caso de no recibirlo revisa el spam. Gracias!!!");
 
             btnGUardar.Enabled = false;
         }
@@ -237,120 +238,17 @@ public partial class _Solicitud : System.Web.UI.Page
         }
     }
 
-    protected void enviarMail(String sBody)
+    protected void enviarMail(String sBody, string sMailAlumno)
     {
-        //var fromAddress = new MailAddress("tucorreode@gmail.com", "From Name");
-        //var toAddress = new MailAddress("to@example.com", "To Name");
-        //const string fromPassword = "fromPassword";
-        //const string subject = "Subject";
-        //const string body = "Body";
-
-        //var smtp = new SmtpClient
-        //{
-        //    Host = "smtp.gmail.com",
-        //    Port = 587,
-        //    EnableSsl = true,
-        //    DeliveryMethod = SmtpDeliveryMethod.Network,
-        //    UseDefaultCredentials = false,
-        //    Credentials = new NetworkCredential(fromAddress.Address, fromPassword)
-        //};
-        //using (var message = new MailMessage(fromAddress, toAddress)
-        //{
-        //    Subject = subject,
-        //    Body = body
-        //})
-        //{
-        //    smtp.Send(message);
-        //}
-
-        // Otro
-        //        < configuration >
-        //  < host > smtp.gmail.com </ host >
-        //  < port > 587 </ port >
-        //  < user > tucuenta@gmail.com </ user >
-   
-        //     < password > contraseñagmail </ password >
-   
-        //     < enableSsl > true </ enableSsl >
-        //   </ configuration >
-
-        //  using System;
-        //        using EmailService;
-        //        using System.Net.Mail;
-        //        using System.Net.Mime;
-
-        //namespace EmailServiceCliente
-        //{
-        //    class Program
-        //    {
-        //        static void Main(string[] args)
-        //        {
-        //            try
-        //            {
-        //                GestorCorreo gestor = new GestorCorreo();
-
-        //                //Correo con archivos adjuntos
-        //                MailMessage correo = new MailMessage("tucuenta@gmail.com",
-        //                                                     "benjamin@aspnetcoremaster.com",
-        //                                                     "Archivo de configuracíon",
-        //                                                     "Por favor verificar adjunto.");
-
-        //                string ruta = "Configuracion.xml";
-        //                Attachment adjunto = new Attachment(ruta, MediaTypeNames.Application.Xml);
-        //                correo.Attachments.Add(adjunto);
-        //                gestor.EnviarCorreo(correo);
-
-        //                // Correo con HTML
-        //                gestor.EnviarCorreo("tucuenta@gmail.com",
-        //                                    "Prueba",
-        //                                    "Mensaje en texto plano");
-        //                // Correo de texto  
-        //                gestor.EnviarCorreo("tucuenta@gmail.com",
-        //                                    "Prueba",
-        //                                    "<h1>Mensaje en HTML<h1><p>Contenido</p>",
-        //                                    true);
-        //            }
-        //            catch (System.Exception ex)
-        //            {
-        //                Console.WriteLine(ex.Message);
-        //            }
-        //        }
-        //    }
-        //}
-
         try
         {
-            //System.Net.Mail.MailMessage correo = new System.Net.Mail.MailMessage();
-            //correo.From = new System.Net.Mail.MailAddress("yuri.cano.dev@gmail.com");
-            //correo.To.Add("yuri.cano.dev@gmail.com");
-            //correo.Subject = "Registro iCOM";
-            //correo.Body = sBody;
-            //correo.IsBodyHtml = false;
-            //correo.Priority = System.Net.Mail.MailPriority.Normal;
-
-            //System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient();
-            //smtp.Host = "smtp.gmail.com";
-            //smtp.Credentials = new System.Net.NetworkCredential("yuri.cano.dev@gmail.com", "YuriCano.9");
-            //smtp.EnableSsl = true;
-            //smtp.Send(correo);
-
-
-
-            //Secure WebMail Interface: https://mail5006.site4now.net
-            //MX Record Address: igw5002.site4now.net
-            //SMTP Host: mail.icom.education
-            //SMTP Port: 25 or 8889(if your isp blocks port 25)
-            //SSL Ports:   SMTP: 465, POP3: 995, IMAP: 993
-
-
             var client = new SmtpClient("mail.icom.education", 25)
             {
                 Credentials = new NetworkCredential("admisiones@icom.education", "iCom2018.!"),
-                EnableSsl = true
+                EnableSsl = false
             };
-            client.Send("yuri.ivann.cano@gmail.ctom", "yuri.cano.dev@gmail.com", "test", "testbody");
-            Console.WriteLine("Sent");
-            Console.ReadLine();
+            client.Send("admisiones@icom.education", sMailAlumno, "iCom Admisiones", sBody);
+            ResgitraLog("Enviando: " + sBody + " - " + sMailAlumno);
         }
         catch (Exception ex)
         {

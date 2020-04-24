@@ -1,4 +1,4 @@
-﻿<%@ page title="" language="C#" masterpagefile="~/Sitio.master" autoeventwireup="true" inherits="_Mcmd, App_Web_tzegeh2n" %>
+﻿<%@ page title="" language="C#" masterpagefile="~/Sitio.master" autoeventwireup="true" inherits="_Mcmd, App_Web_forlfuvr" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
 
@@ -58,8 +58,7 @@
                             <h5 style="color: #602F7E;">Primero</h5>
                             <ul>
                                 <li style="color: #602F7E;"><span style="color: #333333 !important;">Comuicación deportiva</span></li>
-                                <li style="color: #602F7E;"><span style="color: #333333 !important;">Marco legal del deporte</span></li>
-                                <li style="color: #602F7E;"><span style="color: #333333 !important;">Mercadotecnia deportiva</span></li>
+                                <li style="color: #602F7E;"><span style="color: #333333 !important;">Régimen legal</span></li>
                             </ul>
                         </div>
                     </div>
@@ -68,9 +67,8 @@
                         <div class="callout large" style="height: 260px; border: 1px solid #602F7E;">
                             <h5 style="color: #602F7E;">Segundo</h5>
                             <ul>
-                                <li style="color: #602F7E;"><span style="color: #333333 !important;">Medidos de comunicación</span></li>
-                                <li style="color: #602F7E;"><span style="color: #333333 !important;">Relaciones públicas</span></li>
-                                <li style="color: #602F7E;"><span style="color: #333333 !important;">Finanzas y economía del deporte</span></li>
+                                <li style="color: #602F7E;"><span style="color: #333333 !important;">Mercadotecnia</span></li>
+                                <li style="color: #602F7E;"><span style="color: #333333 !important;">Estadística Aplicada</span></li>
                             </ul>
                         </div>
                     </div>
@@ -79,9 +77,8 @@
                         <div class="callout large" style="height: 260px; border: 1px solid #602F7E;">
                             <h5 style="color: #602F7E;">Tercero</h5>
                             <ul>
-                                <li style="color: #602F7E;"><span style="color: #333333 !important;">Publicidad deportiva</span></li>
-                                <li style="color: #602F7E;"><span style="color: #333333 !important;">Innovación y liderazgo en el deporte</span></li>
-                                <li style="color: #602F7E;"><span style="color: #333333 !important;">Comunicación, deporte y protocolo</span></li>
+                                <li style="color: #602F7E;"><span style="color: #333333 !important;">Promoción, Publicidad e identidad de marca</span></li>
+                                <li style="color: #602F7E;"><span style="color: #333333 !important;">Medios de Comunicación</span></li>
                             </ul>
                         </div>
                     </div>
@@ -90,9 +87,8 @@
                         <div class="callout large" style="height: 260px; border: 1px solid #602F7E;">
                             <h5 style="color: #602F7E;">Cuarto</h5>
                             <ul>
-                                <li style="color: #602F7E;"><span style="color: #333333 !important;">Marketing deportivo digital</span></li>
-                                <li style="color: #602F7E;"><span style="color: #333333 !important;">Estudios de mercado especializado</span></li>
-                                <li style="color: #602F7E;"><span style="color: #333333 !important;">Seminario de Tesis I</span></li>
+                                <li style="color: #602F7E;"><span style="color: #333333 !important;">Mercadotecnia Especializada</span></li>
+                                <li style="color: #602F7E;"><span style="color: #333333 !important;">Gestión de Imagen Deportiva, Personal e Institucional</span></li>
                             </ul>
                         </div>
                     </div>
@@ -101,9 +97,8 @@
                         <div class="callout large" style="height: 260px; border: 1px solid #602F7E;">
                             <h5 style="color: #602F7E;">Quinto</h5>
                             <ul>
-                                <li style="color: #602F7E;"><span style="color: #333333 !important;">Producción de medios deportivos</span></li>
-                                <li style="color: #602F7E;"><span style="color: #333333 !important;">Comportamiento del consumidor</span></li>
-                                <li style="color: #602F7E;"><span style="color: #333333 !important;">Seminario de Tesis II</span></li>
+                                <li style="color: #602F7E;"><span style="color: #333333 !important;">Seminario de Investigación</span></li>
+                                <li style="color: #602F7E;"><span style="color: #333333 !important;">Psicología de la Publicidad</span></li>
                             </ul>
                         </div>
                     </div>
@@ -113,9 +108,7 @@
                             <h5 style="color: #602F7E;">Sexto</h5>
                             <ul>
                                 <li style="color: #602F7E;"><span style="color: #333333 !important;">Branding deportivo</span></li>
-                                <li style="color: #602F7E;"><span style="color: #333333 !important;">Comunicación interinstitucional en el
-											deporte</span></li>
-                                <li style="color: #602F7E;"><span style="color: #333333 !important;">Tesis</span></li>
+                                <li style="color: #602F7E;"><span style="color: #333333 !important;">Seminario Integrador</span></li>
                             </ul>
                         </div>
                     </div>
