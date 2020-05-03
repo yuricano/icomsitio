@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Data;
+using System.Globalization;
 using System.IO;
+using System.Net;
+using System.Net.Mail;
 using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.UI.WebControls;
-using System.Net.Mail;
-using System.Globalization;
-using System.Net;
-using System.Web.UI;
 
 public partial class _Solicitud : System.Web.UI.Page
 {
@@ -243,7 +242,7 @@ public partial class _Solicitud : System.Web.UI.Page
                 "Recibirás un correo electrónico con los pasos a seguir para completar tu matrícula. <br>" +
                 "En caso de no recibirlo revisa el spam. Gracias!!!");
 
-            // limpiar datos
+            // Ya se envio.
             bGuarda = false;
             btnGUardar.Enabled = false;
         }

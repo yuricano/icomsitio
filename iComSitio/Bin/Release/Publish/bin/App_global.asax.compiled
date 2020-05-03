@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<preserve resultType="8" virtualPath="/iComSitio/global.asax" hash="7ee9049f" filehash="f8babee1504" flags="150000" assembly="App_global.asax" type="ASP.global_asax">
-    <filedeps>
-        <filedep name="/iComSitio/global.asax" />
-    </filedeps>
-</preserve>
