@@ -7,11 +7,13 @@ using System.Web.UI.WebControls;
 using System.Net.Mail;
 using System.Globalization;
 using System.Net;
+using System.Web.UI;
 
 public partial class _Solicitud : System.Web.UI.Page
 {
     static DataTable dtDatos = new DataTable();
     static DataTable dtFiltro = new DataTable();
+    static bool bGuarda = true;
 
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -77,6 +79,12 @@ public partial class _Solicitud : System.Web.UI.Page
     protected void btnGuardar_Click(object sender, EventArgs e)
     {
         // Validar
+        if (bGuarda == false)
+        {
+            ResgitraLog("El formulario ya ha sido enviado.");
+            return;
+        }
+
         if (!Valida())
         {
             return;
@@ -97,14 +105,14 @@ public partial class _Solicitud : System.Web.UI.Page
 
             if (iFileSize > 1048576)  // 1MB
             {
-                ResgitraLog("El archivo " + postedFile.FileName + " es demasiado grande. Max 1 MB por archivo");
+                ResgitraLog("El archivo " + postedFile.FileName + " es demasiado grande. Max 1 MB por archivo.");
                 return;
             }
 
             Regex reg = new Regex(@"^.*\.(pdf|PDF)$");
             if (!reg.IsMatch(fileName))
             {
-                ResgitraLog("Solo puedes eniviar archivos con formato PDF");
+                ResgitraLog("Solo puedes eniviar archivos con formato PDF.");
                 return;
             }
         }
@@ -149,7 +157,12 @@ public partial class _Solicitud : System.Web.UI.Page
             // Alta de Usuario
             iCom_BusinessEntity.Usuario oBE = new iCom_BusinessEntity.Usuario();
             oBE.usuario = "al" + DateTime.Now.Year.ToString() + idusuario.ToString();
-            oBE.contrasena = "123456";
+
+            // Paswword
+            oBE.contrasena = string.Format("{0:00}", Convert.ToInt32(ddlDia.SelectedItem.ToString())) +
+                string.Format("{0:00}", Convert.ToInt32(ddlMes.SelectedItem.ToString())) +  
+                txtAnio.Text;
+
             oBE.idusuariotipo = 4;
 
             dtDatos = oBLUsuario.Insertar(oBE);
@@ -221,7 +234,8 @@ public partial class _Solicitud : System.Web.UI.Page
             string sBody = "Hola,\n" +
                 "Tu proceso de inscripción se ha iniciado exitosamente.\n" +
                 "Saludos!\n" +
-                "usuario: " + oBE.usuario + "\n" + "contraseña: " + oBE.contrasena;
+                "usuario: " + oBE.usuario + "\n" + "contraseña: tu fecha de nacimiento en el formato ddmmaaaa";
+                //oBE.contrasena;
 
             enviarMail(sBody, oBEDG.email);
 
@@ -229,6 +243,8 @@ public partial class _Solicitud : System.Web.UI.Page
                 "Recibirás un correo electrónico con los pasos a seguir para completar tu matrícula. <br>" +
                 "En caso de no recibirlo revisa el spam. Gracias!!!");
 
+            // limpiar datos
+            bGuarda = false;
             btnGUardar.Enabled = false;
         }
         catch (Exception ex)
@@ -256,7 +272,6 @@ public partial class _Solicitud : System.Web.UI.Page
             return;
         }
     } 
-
     #region Datos
 
     // Catalogos
