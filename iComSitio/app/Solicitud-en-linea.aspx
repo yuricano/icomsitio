@@ -206,13 +206,13 @@
                                                 Escuela de procedencia
                                                     <asp:TextBox runat="server" ID="txtEscuelaProcedencia" placeholder="Escuela procedencia"></asp:TextBox>
                                             </label>
-                                        </div>
-
-                                        <div class="large-6 medium-6 small-6 cell">
+                                            
                                             <label>
-                                                Selecciona los documentos que enviarás.
-
-                                                <asp:CheckBoxList ID="chkDocumentos" runat="server" CssClass="cell-block">
+                                                Escanear y adjuntar todos los archivos originales y certificados por ambos lados (Solo PDF).
+                                                <br /> <br />
+                                                Selecciona los documentos que enviarás:
+                                                <br />
+                                                <asp:CheckBoxList ID="chkDocumentos" runat="server" CssClass="large-12 medium-12 small-12 cell cell-block">
                                                     <asp:ListItem Value="1">Certificado de Prepa</asp:ListItem>
                                                     <asp:ListItem Value="2">Carta de Pasante</asp:ListItem>
                                                     <asp:ListItem Value="3">Título</asp:ListItem>
@@ -221,20 +221,20 @@
                                                     <asp:ListItem Value="6">CURP</asp:ListItem>
                                                     <asp:ListItem Value="7">Fotografía</asp:ListItem>
                                                 </asp:CheckBoxList>
+                                                
+                                                <b>Debes de seleccionar TODOS los documentos que nos vayas a enviar.</b>
                                             </label>
                                         </div>
-
-                                        <div class="large-6 medium-6 small-12 cell">
-                                            <label>
-                                                Escanear y adjuntar archivos originales y certificados por ambos lados (Solo PDF)
-                                            </label>
-
+                                        
+                                        <div class="large-7 medium-7 small-7 cell">
                                             <asp:FileUpload ID="FileUpload" runat="server" AllowMultiple="true" CssClass="button" />
                                         </div>
 
+                                        <br />
+
                                         <div class="large-12 medium-12 small-12 cell">
                                             <asp:Button runat="server" Text="ENVIAR SOLICITUD" ID="btnGUardar" OnClick="btnGuardar_Click"
-                                                CssClass="button" />
+                                                CssClass="button center" />
                                         </div>
                                     </div>
                                 </div>
