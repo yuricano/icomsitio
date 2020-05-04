@@ -11,7 +11,7 @@ public class Log
         {
             iCom_BusinessEntity.Log oBE = new iCom_BusinessEntity.Log();
 
-            oBE.idlog = Id;
+            oBE.idusuario = Id;
             oBE.modulo = Modulo;
             oBE.descripcion = "Sitio Web - " + Descripcion;
             iCom_BusinessLogic.Log oBL = new iCom_BusinessLogic.Log();
