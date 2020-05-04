@@ -1,4 +1,4 @@
-﻿<%@ page title="" language="C#" masterpagefile="~/Sitio.master" autoeventwireup="true" inherits="_Admision, App_Web_pbbmkcfi" %>
+﻿<%@ page title="" language="C#" masterpagefile="~/Sitio.master" autoeventwireup="true" inherits="_Admision, App_Web_efrb3pay" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
 

@@ -56,16 +56,15 @@ public partial class _Solicitud : System.Web.UI.Page
         try
         {
             dtFiltro = Filtros.Ciudad(0, ddlEstado.SelectedIndex);
+
             if (dtFiltro.Rows.Count > 0)
             {
-                ddlCiudad.Items.Add(new ListItem("Selecciona"));
-                foreach (DataRow row in dtFiltro.Rows)
-                {
-                    ddlCiudad.Items.Add(new ListItem(row[2].ToString()));
-                }
+                ddlCiudad.DataSource = dtFiltro;
+                ddlCiudad.DataTextField = "ciudad";
+                ddlCiudad.DataValueField = "idciudad";
+                ddlCiudad.DataBind();
+                ddlCiudad.Focus();
             }
-
-            ddlCiudad.Focus();
         }
         catch (Exception ex)
         {
@@ -182,9 +181,6 @@ public partial class _Solicitud : System.Web.UI.Page
             string sFecha = txtAnio.Text + "-" + ddlMes.SelectedItem.ToString() + "-" + ddlDia.SelectedItem.ToString();
             DateTime fecha = Convert.ToDateTime(sFecha + " 00:00:00.000", CultureInfo.InvariantCulture);
             oBEDG.fechanacimiento = fecha;
-            
-            //oBEDG.fechanacimiento = DateTime.Parse("01-01-2019");
-            //ResgitraLog(oBEDG.fechanacimiento.ToString());
 
             oBEDG.nacionalidad = txtNacionalidad.Text;
             oBEDG.telefono = txtTelContacto.Text;
@@ -207,7 +203,7 @@ public partial class _Solicitud : System.Web.UI.Page
             oBEDir.numerointerior = txtNumeroInt.Text;
             oBEDir.colonia = txtColonia.Text;
             oBEDir.codigopostal = txtCP.Text;
-            oBEDir.idciudad = ddlCiudad.SelectedIndex;
+            oBEDir.idciudad = int.Parse(ddlCiudad.SelectedValue.ToString());
             oBEDir.idestado = ddlEstado.SelectedIndex;
             oBEDir.idpais = ddlPais.SelectedIndex;
 
