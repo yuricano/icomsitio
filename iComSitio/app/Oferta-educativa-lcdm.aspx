@@ -45,7 +45,7 @@
                     <div class="callout secondary" style="height: 200px">
                         <h5>Duración: <span style="font-weight: 700">9 Tetramestres</span></h5>
                         <h5>Modalidad: <span style="font-weight: 700">Virtual</span></h5>
-                        <h5>Inicio: <span style="font-weight: 700"> </span></h5>
+                        <h5>Inicio: <span style="font-weight: 700">AGOSTO 2020</span></h5>
                     </div>
                 </div>
             </div>

@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Ciudad.cs" />
     <Compile Include="Estado.cs" />
+    <Compile Include="Formulario.cs" />
     <Compile Include="Pais.cs" />
     <Compile Include="PeriodoEscolar.cs" />
     <Compile Include="ModeloEducativo.cs" />

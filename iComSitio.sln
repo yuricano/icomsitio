@@ -1,12 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2026
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "iComSitio", "iComSitio\", "{0B70A902-B869-4CDF-87A1-AA8F9C766E60}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "iComSitio(1)", "iComSitio\", "{0B70A902-B869-4CDF-87A1-AA8F9C766E60}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		ProjectReferences = "{37541bb6-2d6f-42ca-b59b-ce11fca46f3e}|iComPE_BusinessEntity.dll;{43844995-fe3a-4fe5-abdc-cd27f016ca4a}|iComPE_BusinessData.dll;{6aa39873-5897-4fb6-b321-aa240abfa18f}|iComPE_BusinessLogic.dll;"
+		ProjectReferences = ""
 		Debug.AspNetCompiler.VirtualPath = "/localhost_62080"
 		Debug.AspNetCompiler.PhysicalPath = "iComSitio\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62080\"
@@ -24,17 +24,6 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "iComSitio", "iComSitio\", "
 		VWDPort = "62080"
 		SlnRelativePath = "iComSitio\"
 	EndProjectSection
-	ProjectSection(ProjectDependencies) = postProject
-		{6AA39873-5897-4FB6-B321-AA240ABFA18F} = {6AA39873-5897-4FB6-B321-AA240ABFA18F}
-		{43844995-FE3A-4FE5-ABDC-CD27F016CA4A} = {43844995-FE3A-4FE5-ABDC-CD27F016CA4A}
-		{37541BB6-2D6F-42CA-B59B-CE11FCA46F3E} = {37541BB6-2D6F-42CA-B59B-CE11FCA46F3E}
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iCom_BusinessData", "iComPE_BusinessData\iCom_BusinessData.csproj", "{43844995-FE3A-4FE5-ABDC-CD27F016CA4A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iCom_BusinessEntity", "iComPE_BusinessEntity\iCom_BusinessEntity.csproj", "{37541BB6-2D6F-42CA-B59B-CE11FCA46F3E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iCom_BusinessLogic", "iComPE_BusinessLogic\iCom_BusinessLogic.csproj", "{6AA39873-5897-4FB6-B321-AA240ABFA18F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,18 +35,6 @@ Global
 		{0B70A902-B869-4CDF-87A1-AA8F9C766E60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B70A902-B869-4CDF-87A1-AA8F9C766E60}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{0B70A902-B869-4CDF-87A1-AA8F9C766E60}.Release|Any CPU.Build.0 = Debug|Any CPU
-		{43844995-FE3A-4FE5-ABDC-CD27F016CA4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{43844995-FE3A-4FE5-ABDC-CD27F016CA4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{43844995-FE3A-4FE5-ABDC-CD27F016CA4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{43844995-FE3A-4FE5-ABDC-CD27F016CA4A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{37541BB6-2D6F-42CA-B59B-CE11FCA46F3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{37541BB6-2D6F-42CA-B59B-CE11FCA46F3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{37541BB6-2D6F-42CA-B59B-CE11FCA46F3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{37541BB6-2D6F-42CA-B59B-CE11FCA46F3E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6AA39873-5897-4FB6-B321-AA240ABFA18F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6AA39873-5897-4FB6-B321-AA240ABFA18F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6AA39873-5897-4FB6-B321-AA240ABFA18F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6AA39873-5897-4FB6-B321-AA240ABFA18F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

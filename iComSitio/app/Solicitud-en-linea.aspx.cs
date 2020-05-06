@@ -7,6 +7,7 @@ using System.Net.Mail;
 using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.UI.WebControls;
+using iCom_Generales;
 
 public partial class _Solicitud : System.Web.UI.Page
 {

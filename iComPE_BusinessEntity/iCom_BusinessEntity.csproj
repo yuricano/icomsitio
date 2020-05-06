@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -54,6 +57,7 @@
     <Compile Include="ModeloEducativo.cs" />
     <Compile Include="Log.cs" />
     <Compile Include="Carrera.cs" />
+    <Compile Include="Formulario.cs" />
     <Compile Include="UsuarioLaboral.cs" />
     <Compile Include="UsuarioDireccion.cs" />
     <Compile Include="UsuarioDatosGenerales.cs" />

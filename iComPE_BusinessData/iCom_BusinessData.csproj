@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="Ciudad.cs" />
     <Compile Include="Estado.cs" />
+    <Compile Include="Formulario.cs" />
     <Compile Include="Pais.cs" />
     <Compile Include="PeriodoEscolar.cs" />
     <Compile Include="ModeloEducativo.cs" />
@@ -61,12 +62,6 @@
     <Compile Include="Usuario.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\iComPE_BusinessEntity\iCom_BusinessEntity.csproj">
-      <Project>{37541bb6-2d6f-42ca-b59b-ce11fca46f3e}</Project>
-      <Name>iCom_BusinessEntity</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
