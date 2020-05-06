@@ -1,6 +1,0 @@
-C:\Desarrollo\iCOM\icomsitio\iComPE_BusinessEntity\bin\Release\iCom_BusinessEntity.dll
-C:\Desarrollo\iCOM\icomsitio\iComPE_BusinessEntity\bin\Release\iCom_BusinessEntity.pdb
-C:\Desarrollo\iCOM\icomsitio\iComPE_BusinessEntity\obj\Release\iCom_BusinessEntity.csprojAssemblyReference.cache
-C:\Desarrollo\iCOM\icomsitio\iComPE_BusinessEntity\obj\Release\iCom_BusinessEntity.csproj.CoreCompileInputs.cache
-C:\Desarrollo\iCOM\icomsitio\iComPE_BusinessEntity\obj\Release\iCom_BusinessEntity.dll
-C:\Desarrollo\iCOM\icomsitio\iComPE_BusinessEntity\obj\Release\iCom_BusinessEntity.pdb

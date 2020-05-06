@@ -1,5 +1,0 @@
-C:\Desarrollo\af1\AF1_BusinessEntity\bin\Debug\AF1_BusinessEntity.dll
-C:\Desarrollo\af1\AF1_BusinessEntity\bin\Debug\AF1_BusinessEntity.pdb
-C:\Desarrollo\af1\AF1_BusinessEntity\obj\Debug\AF1_BusinessEntity.csproj.CoreCompileInputs.cache
-C:\Desarrollo\af1\AF1_BusinessEntity\obj\Debug\AF1_BusinessEntity.dll
-C:\Desarrollo\af1\AF1_BusinessEntity\obj\Debug\AF1_BusinessEntity.pdb

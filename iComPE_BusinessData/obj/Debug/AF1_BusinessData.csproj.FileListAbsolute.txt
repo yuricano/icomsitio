@@ -1,9 +1,0 @@
-C:\Desarrollo\af1\AF1_BusinessData\obj\Debug\AF1_BusinessData.csprojAssemblyReference.cache
-C:\Desarrollo\af1\AF1_BusinessData\obj\Debug\AF1_BusinessData.csproj.CoreCompileInputs.cache
-C:\Desarrollo\af1\AF1_BusinessData\bin\Debug\AF1_BusinessData.dll
-C:\Desarrollo\af1\AF1_BusinessData\bin\Debug\AF1_BusinessData.pdb
-C:\Desarrollo\af1\AF1_BusinessData\bin\Debug\AF1_BusinessEntity.dll
-C:\Desarrollo\af1\AF1_BusinessData\bin\Debug\AF1_BusinessEntity.pdb
-C:\Desarrollo\af1\AF1_BusinessData\obj\Debug\AF1_BusinessData.csproj.CopyComplete
-C:\Desarrollo\af1\AF1_BusinessData\obj\Debug\AF1_BusinessData.dll
-C:\Desarrollo\af1\AF1_BusinessData\obj\Debug\AF1_BusinessData.pdb
