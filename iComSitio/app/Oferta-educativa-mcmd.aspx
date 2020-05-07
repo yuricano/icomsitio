@@ -11,6 +11,7 @@
 								capaces de innovar, diseñar, dirigir y evaluar proyectos deportivos. El egresado será capaz de planear,
 								coordinar, gestionar y promocionar las tendencias del mercado deportivo, contribuyendo a lograr una mejor
 								cultura del deporte en nuestra sociedad.
+       
         </p>
 
         <div class="center padding20 ">
@@ -24,27 +25,28 @@
         </div>
 
         <div class="fondo-oscuro padding">
-                <div class="grid-x grid-padding-x">
+            <div class="grid-x grid-padding-x">
 
-                    <div class="large-8 medium-6 cell">
-                        <div class="callout" style="height: 200px">
-                            <h5 class="texto-morado">Perfil de ingreso</h5>
-                            <p>
-                                Esta Maestría esta dirigida a Licenciados en Comunicación, Mercadotecnia, Publicidad, Educación Física o
+                <div class="large-8 medium-6 cell">
+                    <div class="callout" style="height: 200px">
+                        <h5 class="texto-morado">Perfil de ingreso</h5>
+                        <p>
+                            Esta Maestría esta dirigida a Licenciados en Comunicación, Mercadotecnia, Publicidad, Educación Física o
 									carrera afín y a quienes después de un grado superior vean en el tema de la comunicación y mercadotecnia
 									deportiva, una oportunidad para desarrollarse.
-                            </p>
-                        </div>
+                           
+                        </p>
                     </div>
-                    <div class="large-4 medium-4 cell">
-                        <div class="callout secondary" style="height: 200px">
-                            <h5>Duración: <span style="font-weight: 700">6 Tetramestres</span></h5>
-                            <h5>Modalidad: <span style="font-weight: 700">Virtual</span></h5>
-                            <h5>Inicio: <span style="font-weight: 700">AGOSTO 2020</span></h5>
-                        </div>
+                </div>
+                <div class="large-4 medium-4 cell">
+                    <div class="callout secondary" style="height: 200px">
+                        <h5>Duración: <span style="font-weight: 700">6 Tetramestres</span></h5>
+                        <h5>Modalidad: <span style="font-weight: 700">Virtual</span></h5>
+                        <h5>Inicio: <span style="font-weight: 700">AGOSTO 2020</span></h5>
                     </div>
                 </div>
             </div>
+        </div>
 
         <div class="fondo-blanco padding">
             <div class="grid-container">
@@ -58,7 +60,7 @@
                         <div class="callout large" style="height: 260px; border: 1px solid #602F7E;">
                             <h5 style="color: #602F7E;">Primero</h5>
                             <ul>
-                                <li style="color: #602F7E;"><span style="color: #333333 !important;">Comuicación deportiva</span></li>
+                                <li style="color: #602F7E;"><span style="color: #333333 !important;">Comunicación deportiva</span></li>
                                 <li style="color: #602F7E;"><span style="color: #333333 !important;">Régimen legal</span></li>
                             </ul>
                         </div>
@@ -132,6 +134,7 @@
 											Nuestros egresados desarrollarán habilidades de evaluación y análisis comercial, de
 											negociación y toma de decisiones, así como una comunicación efectiva, pensamiento
 											creativo y estratégico, siempre en busca de la innovación.	
+                               
                                 </p>
                             </div>
                             <div class="large-4 large-offset-2 columns">
