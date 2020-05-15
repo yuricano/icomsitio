@@ -267,9 +267,9 @@ public partial class _Solicitud : System.Web.UI.Page
             ResgitraLog(ex.Message);
             return;
         }
-    } 
-    #region Datos
+    }
 
+    #region Datos
     // Catalogos
     protected void Carga_Catalogos()
     {

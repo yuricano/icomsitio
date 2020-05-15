@@ -3,6 +3,7 @@
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+
     <div class="fondo-oscuro padding">
         <div class="grid-x grid-padding-x">
             <div class="large-4 medium-4 cell">
@@ -25,4 +26,5 @@
             </div>
         </div>
     </div>
+
 </asp:Content>

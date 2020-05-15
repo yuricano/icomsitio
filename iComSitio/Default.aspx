@@ -8,7 +8,12 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Nuestra modalidad facilita la accesibilidad académica, enriquece el aprendizaje tecnológico y favorece la internacionalización." />
+    <meta name="abstract" content="En el Instituto nos caracterizamos por transmitir a nuestros estudiantes la pasión por su formación, y en su carrera, buscando potencializar su talento al máximo." />
+    <meta name="keywords" content="iCom, universidad iCom, universidades en méxico, universidad en linea, universidad en línea" />
+    <link rel="shortcut icon" type="image/x-icon" href="~/logo.ico" />
+    <title>Universidad iCom</title>
 </head>
 
 <body>

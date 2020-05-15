@@ -11,7 +11,6 @@
 								capaces de innovar, diseñar, dirigir y evaluar proyectos deportivos. El egresado será capaz de planear,
 								coordinar, gestionar y promocionar las tendencias del mercado deportivo, contribuyendo a lograr una mejor
 								cultura del deporte en nuestra sociedad.
-       
         </p>
 
         <div class="center padding20 ">
